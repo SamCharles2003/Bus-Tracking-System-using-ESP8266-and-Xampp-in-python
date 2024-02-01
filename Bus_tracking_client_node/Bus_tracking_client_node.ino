@@ -6,8 +6,8 @@
 
 TinyGPSPlus gps;
 SoftwareSerial gps_dev(D3,D4); //D3 ,D4
-const char *ssid = "Galaxy A14 5G";
-const char *password = "masleschar3002";
+const char *ssid = "Your-SSID";
+const char *password = "Your-Password";
 String serverAddress = "http://192.168.108.215:5000"; // Change this to the IP address of your server
 
 
@@ -24,7 +24,7 @@ void setup() {
     Serial.println("Connecting to WiFi...");
   }
 
-  Serial.println("Connected to WiFi"+String(WiFi.localIP().toString()));
+  Serial.println("Connected to WiFi"+String(WiFi.localIP().toString())); // copy the ip which is displayed with this string
 }
 
 void loop() {
